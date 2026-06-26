@@ -65,23 +65,8 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-function celsiusTemperature(event) {
-  event.preventDefault();
-  temperatureElement.innerHTML = Math.round(currentTemperature);
-}
-
-function fahrenheitTemperature(event) {
-  event.preventDefault();
-  let fahrenheitTemp = (currentTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
-}
-
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSearchSubmit);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", celsiusTemperature);
-
 
 searchCity("Cape Town");
 
