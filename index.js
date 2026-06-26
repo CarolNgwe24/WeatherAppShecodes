@@ -36,12 +36,6 @@ function showWeather(response) {
 function showForecast(response) {
   let forecastDays = response.data.daily;
 
-  forecastDays.forEach(function (forecastDay, index) {
-    if (index < 7) {
-      document.querySelector(`#day-${index}`).innerHTML = formatDay(
-        forecastDay.time
-      );
-
       let forecastIcon = document.querySelector(`#icon-${index}`);
       forecastIcon.setAttribute("src", forecastDay.condition.icon_url);
       forecastIcon.setAttribute("alt", forecastDay.condition.description);
@@ -88,8 +82,6 @@ searchForm.addEventListener("submit", handleSearchSubmit);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", celsiusTemperature);
 
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", fahrenheitTemperature);
 
 searchCity("Cape Town");
 
