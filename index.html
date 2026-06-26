@@ -13,53 +13,181 @@
     <link rel="stylesheet" href="src/styles.css" />
     <title>My weather application</title>
   </head>
-  <body>
-    <div class="weather-app">
-      <header>
-        <form id="search-form">
-          <input
-            type="search"
-            placeholder="Enter a city"
-            required
-            id="search-input"
-          />
-          <input type="submit" value="Search" class="search-button" />
-        </form>
-      </header>
-      <main>
-        <div class="weather-details">
-          <div>
-            <h1 id="city-display">City Name</h1>
-            <p id="description">Weather Description</p>
-              <div class="temperature-container">
-              <img src=""alt="Weather Icon" id="icon"/>
-              <span id="temperature">---</span>
-              <span class="unit">
-                <a href="#" id="celsius-link">°C</a>
-              </span>
-          </div>
-          <div class="more-info">
-            <p>Wind Speed:<span id="wind-speed">---</span
-            >km/s</p>
+</html>
+<body>
+  <div class="weather-app">
+    <header>
+      <form id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city"
+          required
+          id="search-input"
+        />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+    </header>
+    <main>
+      <div class="weather-details">
+        <div>
+          <h1 id="city-display">City Name</h1>
+          <p id="description">Weather Description</p>
+          <div class="temperature-container">
+            <img src="" alt="Weather Icon" id="icon" />
+            <span id="temperature">---</span>
+            <span class="unit">
+              <a href="#" id="celsius-link">°C</a>
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
           </div>
         </div>
-      </main>
-      <footer>
-        <p>
-          This project was coded by
-          <a href="https://github.com/CarolNgwe24/"target="_blank"
-            >Carol Ngwenya</a
-          > and is
-          <a href="https://github.com/CarolNgwe24/SheCodes-Learning-Project/" target="_blank">
-             on github
-           </a>
-           and
-          <a href="https://shecodeslearning.netlify app" target="_blank"
-            > hosted on Netlify</a>
-          </a>
-        </p>
-      </footer>
-    </div>
-    <script src="index.js" defer></script>
-  </body>
-</html>
+        <div class="more-info">
+          <p>Wind Speed: <span id="wind-speed">---</span> km/h</p>
+        </div>
+      </div>
+
+      <div class="weather-forecast">
+        <div class="weather-forecast-day">
+          <p class="weather-forecast-date" id="day-0">Sun</p>
+          <img
+            src=""
+            alt="forecast icon"
+            id="icon-0"
+            class="weather-forecast-icon"
+          />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature" id="temp-max-0"
+              >--°</span
+            >
+            <span class="weather-forecast-temperature" id="temp-min-0"
+              >--°</span
+            >
+          </div>
+        </div>
+        <div class="weather-forecast-day">
+          <p class="weather-forecast-date" id="day-1">Mon</p>
+          <img
+            src=""
+            alt="forecast icon"
+            id="icon-1"
+            class="weather-forecast-icon"
+          />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature" id="temp-max-1"
+              >--°</span
+            >
+            <span class="weather-forecast-temperature" id="temp-min-1"
+              >--°</span
+            >
+          </div>
+        </div>
+        <div class="weather-forecast-day">
+          <p class="weather-forecast-date" id="day-2">Tue</p>
+          <img
+            src=""
+            alt="forecast icon"
+            id="icon-2"
+            class="weather-forecast-icon"
+          />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature" id="temp-max-2"
+              >--°</span
+            >
+            <span class="weather-forecast-temperature" id="temp-min-2"
+              >--°</span
+            >
+          </div>
+        </div>
+        <div class="weather-forecast-day">
+          <p class="weather-forecast-date" id="day-3">Wed</p>
+          <img
+            src=""
+            alt="forecast icon"
+            id="icon-3"
+            class="weather-forecast-icon"
+          />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature" id="temp-max-3"
+              >--°</span
+            >
+            <span class="weather-forecast-temperature" id="temp-min-3"
+              >--°</span
+            >
+          </div>
+        </div>
+        <div class="weather-forecast-day">
+          <p class="weather-forecast-date" id="day-4">Thu</p>
+          <img
+            src=""
+            alt="forecast icon"
+            id="icon-4"
+            class="weather-forecast-icon"
+          />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature" id="temp-max-4"
+              >--°</span
+            >
+            <span class="weather-forecast-temperature" id="temp-min-4"
+              >--°</span
+            >
+          </div>
+        </div>
+        <div class="weather-forecast-day">
+          <p class="weather-forecast-date" id="day-5">Fri</p>
+          <img
+            src=""
+            alt="forecast icon"
+            id="icon-5"
+            class="weather-forecast-icon"
+          />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature" id="temp-max-5"
+              >--°</span
+            >
+            <span class="weather-forecast-temperature" id="temp-min-5"
+              >--°</span
+            >
+          </div>
+        </div>
+        <div class="weather-forecast-day">
+          <p class="weather-forecast-date" id="day-6">Sat</p>
+          <img
+            src=""
+            alt="forecast icon"
+            id="icon-6"
+            class="weather-forecast-icon"
+          />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature" id="temp-max-6"
+              >--°</span
+            >
+            <span class="weather-forecast-temperature" id="temp-min-6"
+              >--°</span
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        This project was coded by
+        <a href="https://github.com/CarolNgwe24/" target="_blank"
+          >Carol Ngwenya</a
+        >
+        and is
+        <a
+          href="https://github.com/CarolNgwe24/SheCodes-Learning-Project/"
+          target="_blank"
+        >
+          on github
+        </a>
+        and
+        <a href="https://shecodeslearning.netlify.app" target="_blank">
+          hosted on Netlify</a
+        >
+      </p>
+    </footer>
+  </div>
+  <script src="index.js" defer></script>
+</body>
+
