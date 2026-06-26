@@ -46,7 +46,6 @@ function showForecast(response) {
       document.querySelector(`#temp-min-${index}`).innerHTML = `${Math.round(
         forecastDay.temperature.minimum
       )}°`;
-    }
   });
 }
 
