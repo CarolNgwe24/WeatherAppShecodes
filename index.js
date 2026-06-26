@@ -35,7 +35,7 @@ function showWeather(response) {
 
 function showForecast(response) {
   let forecastDays = response.data.daily;
-
+  forecastDays.forEach(function (forecastDay, index) {
       let forecastIcon = document.querySelector(`#icon-${index}`);
       forecastIcon.setAttribute("src", forecastDay.condition.icon_url);
       forecastIcon.setAttribute("alt", forecastDay.condition.description);
